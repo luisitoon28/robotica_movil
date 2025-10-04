@@ -40,4 +40,4 @@ Por último, dar un punto de vista algo crítico, ya que al ser la práctica en 
 
 Dejo un video demostración x10 de velocidad para ver el funcionamiento del robot.
 
-[![Watch the video](https://youtu.be/gbT_UCeMD64)
+[![Watch the video](https://www.youtube.com/watch?v=gbT_UCeMD64)
