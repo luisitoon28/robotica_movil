@@ -31,8 +31,10 @@ Por último, había ocasiones en las que la ejecución se me detenía de golpe, 
 
 Dejo un video demostración x10 de velocidad para ver el funcionamiento del robot en:
 
-Circuito simple, 
+Circuito simple, 50s
 [![Watch the video]](https://www.youtube.com/watch?v=GNgtHxaxMD8)
 
-Circuito Nurburgrin, 
+Circuito Nurburgrin, 87s
 [![Watch the video]](https://www.youtube.com/watch?v=SCmjc-E2bA4)
+
+Lo siento por la calidad de los videos.
