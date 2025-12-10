@@ -53,13 +53,12 @@ Dejo un video demostración para ver el funcionamiento del robot:
 Como podemos ver en las imagenes, con Odom2 al tener algo más de ruido el mapa no está bien pero se parece al Odom, pero al meter aún más ruido con el Odom3 el mapa ni se completa.
 
 Odom:
-![Texto alternativo](images/Odom.png)
-
+![Texto alternativo](../images/Odom.png)
 
 
 Odom2:
-![alt.text](images/Odom2.png)
+![alt.text](../images/Odom2.png)
 
 
 Odom3:
-![alt.text](images/Odom3.png)
+![alt.text](../images/Odom3.png)
