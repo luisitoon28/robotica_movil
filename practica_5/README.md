@@ -45,4 +45,4 @@ He tenido que ajustar las posiciones para que estén centradas en la imagen, ya 
 ## 4. Video
 
 Dejo un video demostración para ver el funcionamiento del robot:
-[![Watch the video]](www.youtube.com/watch?v=usREJzRY2_k&feature=youtu.be)
+[![Watch the video]](https://youtu.be/usREJzRY2_k)
