@@ -36,6 +36,7 @@ El angulo del giro va a depender de si el laser detecta una pared cerca, si la d
 
 Para ver si se ha detectado una pared al ir hacia delante, tengo una función para coger una ventana de x grados en la parte frontal y devuelvo el valos más pequeño de dicha ventana y para los laterales tengo una función que coje los valores del laser, descarta los valores no válidos, ahora miro los valores de la mitad a la derecha e izquierda y eligo a cual de los dos ir.
 
+
 ## 3. Problemas enfrentados
 
 Para el movimeinto he intentado hacer un movimiento basado en fronteras, mirando cual es la posicióm más cercana al robot que tiene valores probabilisticos vacíos junto con probabilidades sin calcular, es decir 0, para dirigir con un pid al robot, pero no me ha dado tiempo a terminarlo y he decidido volver al movimiento sistemático.
@@ -46,3 +47,18 @@ He tenido que ajustar las posiciones para que estén centradas en la imagen, ya 
 
 Dejo un video demostración para ver el funcionamiento del robot:
 [![Watch the video]](https://youtu.be/usREJzRY2_k)
+
+## 5. Comparación de Odom2 y Odom3
+
+Como podemos ver en las imagenes, con Odom2 al tener algo más de ruido el mapa no está bien pero se parece al Odom, pero al meter aún más ruido con el Odom3 el mapa ni se completa.
+
+Odom:
+![alt.text]( "Odom")
+
+
+Odom2:
+![alt.text]( "Odom2")
+
+
+Odom3:
+![alt.text]("Odom3")
