@@ -22,7 +22,7 @@ Para ello he creado, tres funciones de movimiento, tres para comprobar si debe p
 
 6. check_turn_2_forward(): comprueba si se ha girado ya el ángulo objetivo.
 
-7. go_state(new_state): cambia el estado actual por el estado introducido, ya de paso aprovecho para resetar velocidades y variables globales. Ahora el calculo del ángulo aleatorio entre *[-90, 90]* grados del giro lo calculo aquí ya que si lo hago en la función turn se va a calcular todo el rato en vez de quedarse fijo en un valor
+7. go_state(new_state): cambia el estado actual por el estado introducido, ya de paso aprovecho para resetar velocidades y variables globales. Ahora el calculo del ángulo aleatorio entre *[90, 160]* grados del giro lo calculo aquí ya que si lo hago en la función turn se va a calcular todo el rato en vez de quedarse fijo en un valor
 
 8. normalize_angle(angle): normaliza el angulo recibido por el robot, ya que este viene dado por el rango [0, π] y [-π, 0] y para poder trabajar con ello, necesito que el rango sea de [0, 2π]
 
@@ -36,7 +36,7 @@ Por último, el bucle while lo iba a hacer con un switch-case (en Python match-c
 
 Dar un punto de vista algo crítico, ya que al ser la práctica en Python he tenido que usar variables globales, lo cual no lo veo del todo correcto, pero al estar acostumbrado a trabajar con clases, estas variables las habría hecho como atributos de la clase.
 
-A la hora de realizar la correción de la práctica, me di cuenta que la función que recoge el estado del bumper está desactivada y tuve que cambiarlo por detección a través del laser.
+A la hora de realizar la correción de la práctica, me di cuenta que la función que recoge el estado del bumper está desactivada y tuve que cambiarlo por detección a través del laser. He tenido que cambiar los angulos de giro a *[90, 160]*, debido a que ahora el bumper no funcionay se tiene que hacer por el laser, si mantengo *[-90, 90]* es muy probable que el robot se quede pillado en alguna esquina.
 
 ## 4. Video
 
