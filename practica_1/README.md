@@ -10,19 +10,19 @@ Para ello he creado, tres funciones de movimiento, tres para comprobar si debe p
 
 ## 2. Las funciones
 
-1. move_turn(): hace girar el robot un ángulo aleatorio entre *[-90, 90]* grados, esto lo hice calculando el ángulo que había girado y comparandolo con el objetivo marcado, he tenido varias dificultades, pero estas las comentaré en el sigueinte punto.
+1. move_turn(): hace girar el robot un ángulo aleatorio entre *[-90, 90]* grados.
 
 2. move_reverse(): mueve hacia atás el robot.
 
 3. move_forward(): mueve hacia delante el robot.
 
-4. check_forward_2_reverse(): comprueba el estado del bumper para ver si se tiene que cambiar la dirección del robot.
+4. check_forward_2_reverse(): comprueba que el valor frontal del laser sea mayor a 0.35
 
 5. check_reverse_2_turn(): a través de un sistema de ticks, se comprueba si se ha retrocedido la distancia suficiente.
 
 6. check_turn_2_forward(): comprueba si se ha girado ya el ángulo objetivo.
 
-7. go_state(new_state): cambia el estado actual por el estado introducido, ya de paso aprovecho para resetar velocidades y variables globales.
+7. go_state(new_state): cambia el estado actual por el estado introducido, ya de paso aprovecho para resetar velocidades y variables globales. Ahora el calculo del ángulo aleatorio entre *[-90, 90]* grados del giro lo calculo aquí ya que si lo hago en la función turn se va a calcular todo el rato en vez de quedarse fijo en un valor
 
 8. normalize_angle(angle): normaliza el angulo recibido por el robot, ya que este viene dado por el rango [0, π] y [-π, 0] y para poder trabajar con ello, necesito que el rango sea de [0, 2π]
 
@@ -34,10 +34,12 @@ otra función con la que he tenido problemas ha sido con check_reverse_2_turn(),
 
 Por último, el bucle while lo iba a hacer con un switch-case (en Python match-case), pero este me dio problemas y lo decidí cambiar por if-elif.
 
-Por último, dar un punto de vista algo crítico, ya que al ser la práctica en Python he tenido que usar variables globales, lo cual no lo veo del todo correcto, pero al estar acostumbrado a trabajar con clases, estas variables las habría hecho como atributos de la clase.
+Dar un punto de vista algo crítico, ya que al ser la práctica en Python he tenido que usar variables globales, lo cual no lo veo del todo correcto, pero al estar acostumbrado a trabajar con clases, estas variables las habría hecho como atributos de la clase.
+
+A la hora de realizar la correción de la práctica, me di cuenta que la función que recoge el estado del bumper está desactivada y tuve que cambiarlo por detección a través del laser.
 
 ## 4. Video
 
-Dejo un video demostración x10 de velocidad para ver el funcionamiento del robot.
+Dejo un video demostración de velocidad para ver el funcionamiento del robot, en este caso no he puesto el proceso entero de la limpieza de la casa, solo he dejado un fragmento de 4 minutos, pero al ser el comportamiento el mismo que la vez pasada, no lo he grabado durante un largo periodo de tiempo, ya que no dispongo del tiempo suficiente.
 
-[![Watch the video]](https://www.youtube.com/watch?v=gbT_UCeMD64)
+[![Watch the video]](https://www.youtube.com/watch?v=KL6KvP8jI64)
